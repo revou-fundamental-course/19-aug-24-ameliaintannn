@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/assets/logo.svg" alt="nav-logo">
+            </div>
+            <div id="menu-icon" class="menu-icon">
+                <i class="ph-fill ph-list"></i>
+            </div>
+            <ul id="menu-list" class="hidden">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#myprofile">My Profile</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Hi Amel, Welcome To Website</h1>
+        <h2>Ini adalah website Portofolio</h2>
+    </section>
+
+    <div class="banner-container">
+        <div class="banner">
+            <img src="/assets/bg1.png" alt="Banner 1" class="banner-image active">
+            <img src="/assets/bg2.png" alt="Banner 2" class="banner-image">
+            <img src="/assets/bg3.png" alt="Banner 3" class="banner-image">
+        </div>
+        <div class="nav-buttons">
+            <button id="prev-btn">Prev</button>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <section id="myprofile" class="myprofile">
+        <h2>My Profile</h2>
+        <div class="profile-container">
+            <div class="profile-item">
+                <div class="profile-pic"></div>
+                <p>Students at<br> Bina Sarana Informatika University</p>
+            </div>
+            <div class="profile-item">
+                <div class="profile-pic"></div>
+                <p>Connect my LinkedIn<br><a href="https://www.linkedin.com/in/ameliaintanpratiwi" target="_blank">LinkedIn Profile</a></p>
+            </div>
+            <div class="profile-item">
+                <div class="profile-pic"></div>
+                <p>Multimedia<br>SMKN 6 Kendal</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>My Experience</h2>
+        <div class="experience-container">
+            <div class="experience-item">
+                <div class="experience-pic"></div>
+                <p>Kampus Mengajar<br>SMPN 159 Jakarta<br>February - June 2024</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-pic"></div>
+                <p>Teacher<br>PAUD AN-NISA<br>June 2022 - December 2023</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-pic"></div>
+                <p>Internship Graphic Design<br>Graphineto<br>January - March 2020</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="message" class="message">
+        <header>
+            <h1>Message Us</h1>
+        </header>
+    <body>
+       <div class="container">
+    <div class="form-container">
+      <h2>Message Us</h2>
+      <form id="myForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="tanggalLahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggalLahir" name="tanggalLahir" required><br><br>
+
+        <label for="jenisKelamin">Jenis Kelamin:</label>
+        <input type="radio" id="laki-laki" name="jenisKelamin" value="Laki-laki">
+        <label for="laki-laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <label for="pesan">Pesan:</label><br>
+        <textarea id="pesan" name="pesan" rows="5" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="output-container">
+      <h2>Output</h2>
+      <div class="output-box">
+        <p id="output-nama"></p>
+        <p id="output-tanggalLahir"></p>
+        <p id="output-jenisKelamin"></p>
+        <p id="output-pesan"></p>
+      </div>
+    </div>
+  </div>
+    </section>
+</body>
+
+    <footer>
+        Created By Amelia Intan
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
